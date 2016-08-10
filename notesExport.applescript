@@ -1,7 +1,7 @@
 on writeToFile(filename, filecontents)
 	set the output to open for access file filename with write permission
 	set eof of the output to 0
-	write filecontents to the output starting at eof
+	write filecontents to the output starting at eof as «class utf8»
 	close access the output
 end writeToFile
 
